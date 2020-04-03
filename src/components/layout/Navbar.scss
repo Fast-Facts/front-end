@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.navbar {
+  height: 70px;
+  background-color: $background;
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.26);
+  display: flex;
+  align-items: center;
+
+  &__logo{
+    color: $primary-color;
+    font-size: 32px;
+    font-family: Rationale;
+    margin-left: 20px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

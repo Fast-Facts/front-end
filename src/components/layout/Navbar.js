@@ -3,8 +3,8 @@ import './Navbar.scss'
 
 const Navbar = () => {
     return (
-        <div>
-            
+        <div className="navbar">
+            <div className="navbar__logo">Fast Facts Adventure</div>
         </div>
     )
 }
