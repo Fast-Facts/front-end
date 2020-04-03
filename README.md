@@ -9,7 +9,9 @@ The ultimate game creation engine for content creators
 Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it in the browser.
 
 
-### `Project Checklist`
+## Project Checklist
+
+### `Pre-Dev`
 
 * [x] Create figma design files
 * [x] Create repositories for front & backend 
@@ -18,6 +20,8 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 * [x] Scaffold files
 * [x] Update Readme file and add checklist
 * [ ] Deploy to netlify
+
+### `Front end`
 * [ ] Create navbar
 * [ ] Add routes for each page
 * [ ] Create landing page
@@ -30,6 +34,7 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 * [ ] Create wizard logic for game play
 * [ ] Add UI compponents for game wizard
 
+### `Back end`
 * [ ] Create database model using db designer
 * [ ] Scaffold backend in nodejs
 * [ ] Connect sqlite database 
@@ -41,6 +46,7 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 * [ ] Add data models for game
 * [ ] Deploy to heroku
 
+### `Testing and Cleanup`
 * [ ] Add tests to front end
 * [ ] Clean up file structure
 * [ ] Clean up styles
