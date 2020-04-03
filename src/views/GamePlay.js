@@ -4,7 +4,7 @@ import './GamePlay.scss'
 const GamePlay = () => {
     return (
         <div>
-            
+            GamePlay
         </div>
     )
 }
