@@ -19,7 +19,7 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 * [x] Remove boilerplate from CRA 
 * [x] Scaffold files
 * [x] Update Readme file and add checklist
-* [ ] Deploy to netlify
+* [x] Deploy to netlify
 
 ### `Front end`
 * [ ] Create navbar
