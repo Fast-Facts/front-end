@@ -1,0 +1,28 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.landing-page {
+  margin-left: 60px;
+  &__content {
+    margin-top: 100px;
+    width: 625px;
+    
+    h2 {
+      margin-top: 30px;
+    }
+
+    .cta-buttons {
+      margin-top: 55px;
+        
+      button {
+        @include button($primary-color);
+        width: 120px;
+        margin-right: 40px;
+      }
+
+      .pink-button {
+        @include button($secondary-color);
+      }
+    }
+  }
+}

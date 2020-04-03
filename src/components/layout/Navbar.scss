@@ -11,9 +11,10 @@
 
   &__logo{
     color: $primary-color;
-    font-size: 32px;
+    font-size: 36px;
     font-family: Rationale;
     margin-left: 20px;
+    font-weight: bold;
     &:hover{
       cursor: pointer;
     }

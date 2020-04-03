@@ -15,10 +15,10 @@ function App() {
           <Route exact path="/">
             <LandingPage />
           </Route>
-          <Route path="/game-creation">
+          <Route path="/create-game">
             <GameCreation />
           </Route>
-          <Route path="/game-play">
+          <Route path="/play-game">
             <GamePlay />
           </Route>
         </Switch>

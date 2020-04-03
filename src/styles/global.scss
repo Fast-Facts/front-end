@@ -2,3 +2,62 @@
 @import 'variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+h1{
+    font-size: $h1;
+    font-weight: 600;
+    font-family: $font-family;
+    line-height: $h1 + .6;
+}
+
+h2{
+    font-size: $h2;
+    font-weight: 600;
+    font-family: $font-family;
+    line-height: $h2 + 1.2;
+    color: rgb(83, 83, 83);
+
+
+}
+
+h3{
+    font-size: $h3;
+    font-weight: 500;
+    font-family: $font-family;
+    line-height: $h3 + 1;
+}
+
+
+h4{
+    font-size: $h4;
+    font-weight: 400;
+    font-family: $font-family;
+    line-height: $h4 + 1;
+
+}
+
+h5{
+    font-size: $h5;
+    font-weight: 400;
+    font-family: $font-family;
+    line-height: $h5 + 1;
+
+}
+
+p, a{
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: $font-family;
+    line-height: 1.8rem;
+
+}
+
+a{
+    color: $secondary-color;
+    font-weight: 400;
+}
+
+a:hover{
+    color: darken($secondary-color, 15%)
+}
