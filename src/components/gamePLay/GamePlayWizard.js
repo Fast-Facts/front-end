@@ -26,6 +26,7 @@ const GamePlayWizard = (props) => {
 
   const onSubmit = () => {
     data.map((question, i) => {
+      console.log(question)
       question.answer
         ? setAnswerArray((answerArray) => [
             ...answerArray.slice(0, i),
