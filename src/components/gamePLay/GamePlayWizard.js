@@ -10,7 +10,7 @@ const GamePlayWizard = (props) => {
   const [submit, setSubmit] = useState(false);
 
   console.log(props.match.params.id);
-  const url = `http://localhost:5000/games/${props.match.params.id}`;
+  const url = `https://fast-facts.herokuapp.com/games/${props.match.params.id}`;
 
   console.log(url);
 

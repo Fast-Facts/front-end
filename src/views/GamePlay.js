@@ -9,7 +9,7 @@ const GamePlay = () => {
   
 
   useEffect(() => {
-    axios.get("http://localhost:5000").then((res) => {
+    axios.get("https://fast-facts.herokuapp.com/").then((res) => {
       setData(res.data);
       console.log(res.data);
     });
