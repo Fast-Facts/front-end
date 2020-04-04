@@ -1,20 +1,42 @@
-import React from 'react'
-import './GameQuestion.scss'
+import React, { useState } from "react";
+import "./GameQuestion.scss";
+import {FaPlus} from "react-icons/fa"
 
-const GameQuestion = ({ setStep, setQuestion, onSubmit }) => {
-    return (
-      <div className="game-question">
-        <h2>Create a new question</h2>
-        <div className="game-question__UI">
-        <input placeholder="i.e. What is my favorite food?"></input>
-        <p>Create a new question or submit</p>
-        <div className="button-flex">
-        <button onClick={()=> setStep("question")}>Next</button>
-        <button className="pink-button" onClick={onSubmit}>Submit</button>
-        </div>
-        </div>
-      </div>
-    );
+const GameQuestion = ({ setStep, setQuestions, onSubmit, questions }) => {
+  const [question, setQuestion] = useState("");
+
+  const handleAdd = () => {
+    setQuestions((questions) => [...questions, question]);
+
+    setStep("question");
+
+    setQuestion('')
   };
 
-export default GameQuestion
+
+  return (
+    <div className="game-question">
+      <h2>Create a new question</h2>
+      <div className="game-question__UI">
+        <div className="button-flex">
+          <input
+            value={question}
+            onChange={(e) => {
+              e.preventDefault();
+              setQuestion(e.target.value);
+            }}
+            placeholder="i.e. What is my favorite food?"
+          ></input>
+          <button className="purple-button" onClick={handleAdd}><FaPlus /></button>
+        </div>
+        <p>Create a new question or submit</p>
+
+        <button className="pink-button" onClick={onSubmit}>
+          Submit
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default GameQuestion;

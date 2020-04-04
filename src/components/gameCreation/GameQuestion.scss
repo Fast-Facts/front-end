@@ -18,27 +18,30 @@
     p {
       margin-top: 55px;
     }
-    input {
-      margin-top: 50px;
-    }
 
     .button-flex {
-        display: flex;
-        justify-content: space-between;
-
-      button {
-        @include button($primary-color);
-        width: 120px;
-        margin: 25px auto;
-        padding: 12px 4px;
+      display: flex;
+      margin-top: 40px;
+      input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 380px;
       }
-
-      .pink-button {
-        @include button($secondary-color);
-        width: 120px;
-        margin: 25px auto;
-        padding: 12px 4px;
+      .purple-button {
+        border: none;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background-color: $primary-color;
+        color: $snow-white;
+        width: 40px;
+        height: 40px;
       }
+    }
+    .pink-button {
+      @include button($secondary-color);
+      width: 120px;
+      margin: 25px auto;
+      padding: 12px 4px;
     }
   }
 }
