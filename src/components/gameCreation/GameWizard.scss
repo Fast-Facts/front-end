@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.game-wizard{
+    margin: 0 auto;
+    width: 600px;
+    background-color: $background;
+    margin-top: 45px;
+    border-radius: 6px;
+    @include box-shadow;
+}

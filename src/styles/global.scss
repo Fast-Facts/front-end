@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'mixins';
 
 @import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
@@ -60,4 +61,15 @@ a{
 
 a:hover{
     color: darken($secondary-color, 15%)
+}
+
+input{
+    padding: 12px 8px;
+    @include box-shadow;
+    border-radius: 4px;
+    font-family: $font-family;
+    ::placeholder{
+        color: rgb(175, 175, 175);
+        font-family: $font-family;
+      }
 }

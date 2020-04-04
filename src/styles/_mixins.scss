@@ -1,29 +1,33 @@
 @mixin button($background-color) {
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: 1em 2em 1em;
-    font-weight: 400;
-    font-family: $font-family;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    border: none;
-    color: $snow-white;
-    border-radius: 6px;
-    -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
-    -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
-    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.26);
-    background-color: $background-color;
-    
-    &:hover {
-      text-decoration: none;
-      background: darken($background-color, 10%);
-    }
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: 1em 2em 1em;
+  font-weight: 400;
+  font-family: $font-family;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border: none;
+  color: $snow-white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.26);
+  background-color: $background-color;
 
-    &:active {
-      position: relative;
-      top: 1px;
-      color: saturate($background-color, 15%);
-    }
+  &:hover {
+    text-decoration: none;
+    background: darken($background-color, 10%);
   }
-  
+
+  &:active {
+    position: relative;
+    top: 1px;
+    color: saturate($background-color, 15%);
+  }
+}
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.26);
+}

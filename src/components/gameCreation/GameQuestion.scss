@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.game-question {
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    padding-top: 30px;
+  }
+
+  &__UI {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 420px;
+    p {
+      margin-top: 55px;
+    }
+    input {
+      margin-top: 50px;
+    }
+
+    .button-flex {
+        display: flex;
+        justify-content: space-between;
+
+      button {
+        @include button($primary-color);
+        width: 120px;
+        margin: 25px auto;
+        padding: 12px 4px;
+      }
+
+      .pink-button {
+        @include button($secondary-color);
+        width: 120px;
+        margin: 25px auto;
+        padding: 12px 4px;
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 ### `Front end`
 * [x] Create navbar
 * [x] Add routes for each page
-* [ ] Create landing page
+* [x] Create landing page
 * [ ] Create game creation view
 * [ ] Add logic for game wizard
 * [ ] Add UI compponents for game wizard
