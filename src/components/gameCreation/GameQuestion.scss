@@ -37,6 +37,28 @@
         height: 40px;
       }
     }
+
+    .radio-input{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+        justify-content: space-around;
+
+        .radio-input-field{
+            background: none;
+
+            input[type="radio"]{
+                box-shadow: none;
+                background-color: $snow-white;
+                border: none;
+                padding: 25px;
+                margin-top: 25px;
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
     .pink-button {
       @include button($secondary-color);
       width: 120px;

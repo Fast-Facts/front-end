@@ -28,25 +28,25 @@ Open [Fast Facts Avdenture](http://fast-facts-adventure.netlify.com) to view it 
 * [x] Create game creation view
 * [x] Add logic for game wizard
 * [x] Add UI compponents for game wizard
-* [ ] Store game information on local state
-* [ ] Create game play view
-* [ ] Add games to game play view
-* [ ] Create wizard logic for game play
-* [ ] Add UI compponents for game wizard
+* [x] Store game information on local state
+* [x] Create game play view
+* [x] Add games to game play view
+* [x] Create wizard logic for game play
+* [x] Add UI compponents for game wizard
 
 ### `Back end`
-* [ ] Create database model using db designer
-* [ ] Scaffold backend in nodejs
-* [ ] Connect sqlite database 
-* [ ] Add endpoints for user
-* [ ] Add endpoints for game
-* [ ] Create migrations for user
-* [ ] Create migrations for game
-* [ ] Add data models for user
-* [ ] Add data models for game
-* [ ] Deploy to heroku
+* [x] Create database model using db designer
+* [x] Scaffold backend in nodejs
+* [x] Connect sqlite database 
+* [x] Add endpoints for user
+* [x] Add endpoints for game
+* [x] Create migrations for user
+* [x] Create migrations for game
+* [x] Add data models for user
+* [x] Add data models for game
+* [x] Deploy to heroku
 
 ### `Testing and Cleanup`
 * [ ] Add tests to front end
-* [ ] Clean up file structure
-* [ ] Clean up styles
+* [x] Clean up file structure
+* [x] Clean up styles

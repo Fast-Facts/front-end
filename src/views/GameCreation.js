@@ -4,6 +4,7 @@ import GameWizard from "../components/gameCreation/GameWizard";
 
 const GameCreation = () => {
   const [questions, setQuestions] = useState([]);
+  
 
   return (
     <div className="game-creation">

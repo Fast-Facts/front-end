@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.submission-page{
+    margin: 70px auto;
+    width: 650px;
+    
+    h1{
+        text-align: center;
+    }
+
+    .submission-page-answer{
+        @include box-shadow;
+        border-radius: 6px;
+        margin: 20px;
+        padding: 20px;
+        background: $background;
+    }
+}

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/global.scss";
 import GameCreation from "./views/GameCreation";
 import GamePlay from "./views/GamePlay";
+import GamePlayWizard from "./components/gamePLay/GamePlayWizard";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           </Route>
           <Route path="/play-game">
             <GamePlay />
+          </Route>
+          <Route path="/game/:id" render={(props) => <GamePlayWizard {...props}/>}>
           </Route>
         </Switch>
       </Router>
