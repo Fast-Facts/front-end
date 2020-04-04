@@ -13,7 +13,8 @@ const GamePlayWizard = (props) => {
   const url = `https://fast-facts.herokuapp.com/games/${props.match.params.id}`;
 
   console.log(url);
-
+  console.log(data);
+  
   useEffect(() => {
     axios.get(url).then((res) => {
       console.log(res.data);
