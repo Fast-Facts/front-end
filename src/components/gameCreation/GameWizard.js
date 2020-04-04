@@ -13,11 +13,11 @@ const GameWizard = ({ questions, setQuestions }) => {
 
   const onSubmit = () => {
     axios
-      .post("https://fast-facts.herokuapp.com/", { name, user, questions })
+      .post("https://fast-facts.herokuapp.com", { name, user, questions })
       .then((res) => console.log(res.data, "server response"))
       .catch((err) => console.log(err));
     setStep("submit");
-    console.log(user, name, questions, answers);
+    console.log(user, name, questions);
   };
 
   return (

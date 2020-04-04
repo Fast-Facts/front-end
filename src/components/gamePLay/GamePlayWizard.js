@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./GamePlayWizard.scss";
 import axios from "axios";
-import SubmissionPage from './SubmissionPage'
+import SubmissionPage from "./SubmissionPage";
 
 const GamePlayWizard = (props) => {
   const [data, setData] = useState([]);
@@ -26,7 +26,7 @@ const GamePlayWizard = (props) => {
 
   const onSubmit = () => {
     data.map((question, i) => {
-      question.answer === 1 && answerArray[i] === true
+      question.answer
         ? setAnswerArray((answerArray) => [
             ...answerArray.slice(0, i),
             "correct",
@@ -93,7 +93,7 @@ const GamePlayWizard = (props) => {
           </div>
         </div>
       ) : (
-        <SubmissionPage answerArray={answerArray} data={data}/>
+        <SubmissionPage answerArray={answerArray} data={data} />
       )}{" "}
     </>
   );
