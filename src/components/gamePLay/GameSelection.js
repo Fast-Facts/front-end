@@ -3,7 +3,6 @@ import {Link} from "react-router-dom"
 import "./GameSelection.scss";
 
 const GameSelection = ({ data }) => {
-console.log(data)
   
   return (
     <div className="game-selection">

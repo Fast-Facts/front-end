@@ -11,7 +11,6 @@ const GamePlay = () => {
   useEffect(() => {
     axios.get("https://fast-facts.herokuapp.com/").then((res) => {
       setData(res.data);
-      console.log(res.data);
     });
   }, []);
 

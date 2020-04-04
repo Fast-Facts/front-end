@@ -9,14 +9,11 @@ const GamePlayWizard = (props) => {
   const [answerArray, setAnswerArray] = useState([]);
   const [submit, setSubmit] = useState(false);
 
-  console.log(props.match.params.id);
   const url = `https://fast-facts.herokuapp.com/games/${props.match.params.id}`;
 
-  console.log(url);
 
   useEffect(() => {
     axios.get(url).then((res) => {
-      console.log(res.data);
       setData(res.data);
       res.data.map((x) =>
         setAnswerArray((answerArray) => [...answerArray, true])
@@ -41,7 +38,6 @@ const GamePlayWizard = (props) => {
     setSubmit(true);
   };
 
-  console.log(answerArray);
 
   return (
     <>

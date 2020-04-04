@@ -17,7 +17,6 @@ const GameWizard = ({ questions, setQuestions }) => {
       .then((res) => console.log(res.data, "server response"))
       .catch((err) => console.log(err));
     setStep("submit");
-    console.log(user, name, questions);
   };
 
   return (
