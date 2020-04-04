@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./GamePlayWizard.scss";
 import axios from "axios";
-import SubmissionPage from "./SubmissionPage";
+import SubmissionPage from './SubmissionPage'
 
 const GamePlayWizard = (props) => {
   const [data, setData] = useState([]);
@@ -13,8 +13,7 @@ const GamePlayWizard = (props) => {
   const url = `https://fast-facts.herokuapp.com/games/${props.match.params.id}`;
 
   console.log(url);
-  console.log(data);
-  
+
   useEffect(() => {
     axios.get(url).then((res) => {
       console.log(res.data);
@@ -27,8 +26,7 @@ const GamePlayWizard = (props) => {
 
   const onSubmit = () => {
     data.map((question, i) => {
-      console.log(question)
-      question.answer
+      question.answer === true && answerArray[i] === true
         ? setAnswerArray((answerArray) => [
             ...answerArray.slice(0, i),
             "correct",
@@ -95,7 +93,7 @@ const GamePlayWizard = (props) => {
           </div>
         </div>
       ) : (
-        <SubmissionPage answerArray={answerArray} data={data} />
+        <SubmissionPage answerArray={answerArray} data={data}/>
       )}{" "}
     </>
   );
